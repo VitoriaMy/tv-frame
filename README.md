@@ -79,6 +79,58 @@
 - 扩展方向
 ````
 
+### 2.5 柜体集成设计
+````markdown name=docs/cabinet-integration.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/cabinet-integration.md
+- 内嵌式 / 半嵌式 / 独立模块式方案
+- 柜体空间规划
+- 开口与安装界面建议
+- 散热与维护设计
+- 外观整合建议
+````
+
+### 2.6 BOM 采购与选型建议
+````markdown name=docs/bom-selection.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/bom-selection.md
+- 入门版 / 稳定版 / 产品化版分级
+- 主控、驱动、导向、联动、电源、饰面选型建议
+- 采购顺序与备件建议
+````
+
+### 2.7 外观尺寸与产品化细节
+````markdown name=docs/appearance-dimensions.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/appearance-dimensions.md
+- 外观比例建议
+- 面板与拼缝建议
+- 层板与饰面厚度建议
+- 顶盖与正面视觉建议
+- 产品化细节建议
+````
+
+### 2.8 联动机构设计
+````markdown name=docs/mechanism-linkage.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/mechanism-linkage.md
+- 同步带 / 拉索 / 连杆 / 齿条联动方案
+- 优缺点对比
+- 调试与校准建议
+- 产品化方向建议
+````
+
+### 2.9 设计图纸说明
+````markdown name=docs/design-drawings.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/design-drawings.md
+- 总体结构示意
+- 顶部结构关系图
+- 平台与滑盖联动示意
+- 柜体开口示意
+- 电控与走线区示意
+- 图纸标注与出图优先级建议
+````
+
+### 2.10 图纸参数与尺寸建议
+````markdown name=docs/drawing-parameters.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/drawing-parameters.md
+- 平台关键尺寸
+- 滑盖与后盖参数
+- 层板与孔位参数
+- 柜体空间与维护空间建议
+- 调平与安装余量建议
+````
+
 ---
 
 ## 三、系统架构摘要
@@ -134,18 +186,22 @@
 2. **docs/assembly-guide.md**：理解结构与安装方式
 3. **docs/wiring-diagram.md**：理解电气与接线设计
 4. **docs/esp32-servo-version.md**：理解控制逻辑与软件架构
-5. **docs/troubleshooting.md**：用于调试与问题排查
+5. **docs/cabinet-integration.md**：理解柜体集成方式
+6. **docs/mechanism-linkage.md**：理解联动机构设计
+7. **docs/design-drawings.md**：理解图纸逻辑与结构关系
+8. **docs/drawing-parameters.md**：查阅关键参数
+9. **docs/troubleshooting.md**：用于调试与问题排查
 
 ---
 
-## 六、建议后续补充文档
+## 六、建议后续补充内容
 
-后续建议继续新增以下专题文档：
+后续建议继续新增以下内容：
 
-- `docs/cabinet-integration.md`：柜体集成方式说明
-- `docs/bom-selection.md`：BOM 采购与选型建议
-- `docs/appearance-dimensions.md`：外观尺寸与产品化细节说明
-- `docs/mechanism-linkage.md`：同步联动机构设计说明
+- `images/` 目录中的结构示意图与联动草图
+- `firmware/` 下的 ESP32 初版程序框架
+- 更细的 2D 尺寸图与安装孔位图
+- 机构爆炸图与装配顺序图
 
 ---
 
@@ -154,7 +210,6 @@
 本项目已经完成从“概念型 DIY 方案”向“模块化、可装配、可产品化方案文档”的初步整理。README 负责项目总览与导航，详细设计内容已逐步拆分进入 `docs/` 目录，便于后续持续细化、维护与版本管理。
 
 如果继续推进，建议下一步优先完善：
-- 柜体集成设计
-- BOM 选型建议
-- 外观尺寸方案
-- 联动机构设计图解
+- `images/` 结构示意图
+- `firmware/` 控制程序框架
+- 2D / 3D 图纸输出基础
