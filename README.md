@@ -131,6 +131,38 @@
 - 调平与安装余量建议
 ````
 
+### 2.11 图像与草图规划
+````markdown name=docs/image-plan.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/image-plan.md
+- 推荐图像分类
+- 各图视角与必须包含内容
+- 标注规范与颜色建议
+- 推荐绘制顺序
+- 图像执行任务卡建议
+````
+
+### 2.12 固件结构规划
+````markdown name=docs/firmware-plan.md url=https://github.com/VitoriaMy/tv-frame/blob/main/docs/firmware-plan.md
+- 固件目录结构建议
+- 模块职责划分
+- 推荐实现顺序
+- 推荐开发原则
+````
+
+### 2.13 图像目录规范
+````markdown name=images/README.md url=https://github.com/VitoriaMy/tv-frame/blob/main/images/README.md
+- 图像命名规则
+- 绘图风格建议
+- 导出格式建议
+- 更新规则与优先顺序
+````
+
+### 2.14 固件目录入口
+````markdown name=firmware/esp32_servo_platform/README.md url=https://github.com/VitoriaMy/tv-frame/blob/main/firmware/esp32_servo_platform/README.md
+- ESP32 控制程序目录说明
+- 当前模块划分概览
+- PlatformIO 项目入口
+````
+
 ---
 
 ## 三、系统架构摘要
@@ -190,7 +222,11 @@
 6. **docs/mechanism-linkage.md**：理解联动机构设计
 7. **docs/design-drawings.md**：理解图纸逻辑与结构关系
 8. **docs/drawing-parameters.md**：查阅关键参数
-9. **docs/troubleshooting.md**：用于调试与问题排查
+9. **docs/image-plan.md**：理解图像输出规划
+10. **docs/firmware-plan.md**：理解固件结构规划
+11. **images/README.md**：查看图像目录规范
+12. **firmware/esp32_servo_platform/README.md**：查看固件入口说明
+13. **docs/troubleshooting.md**：用于调试与问题排查
 
 ---
 
@@ -198,8 +234,8 @@
 
 后续建议继续新增以下内容：
 
-- `images/` 目录中的结构示意图与联动草图
-- `firmware/` 下的 ESP32 初版程序框架
+- `images/` 目录中的真实结构示意图与联动草图
+- `firmware/` 下的 ESP32 初版可运行逻辑
 - 更细的 2D 尺寸图与安装孔位图
 - 机构爆炸图与装配顺序图
 
@@ -207,9 +243,9 @@
 
 ## 七、结语
 
-本项目已经完成从“概念型 DIY 方案”向“模块化、可装配、可产品化方案文档”的初步整理。README 负责项目总览与导航，详细设计内容已逐步拆分进入 `docs/` 目录，便于后续持续细化、维护与版本管理。
+本项目已经完成从“概念型 DIY 方案”向“模块化、可装配、可产品化方案文档”的初步整理。README 负责项目总览与导航，详细设计内容已逐步拆分进入 `docs/` 目录，`images/` 用于后续图像与图纸输出，`firmware/` 用于控制程序结构落地。
 
 如果继续推进，建议下一步优先完善：
-- `images/` 结构示意图
-- `firmware/` 控制程序框架
+- `images/` 真实结构示意图
+- `firmware/` 控制程序功能完善
 - 2D / 3D 图纸输出基础
